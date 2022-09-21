@@ -1,4 +1,4 @@
-
+let width = screen.width;
 // Get the button:
 let mybutton = document.getElementById("topButton");
 
@@ -6,7 +6,7 @@ let mybutton = document.getElementById("topButton");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 && width > 600) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
