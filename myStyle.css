@@ -244,6 +244,9 @@ span {
   #topButton:hover {
   opacity: 1;
   }
+  
+button{
+  background-color: none;
 
   .codeGif {
     width: 90%;
