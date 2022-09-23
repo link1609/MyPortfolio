@@ -176,26 +176,143 @@ span {
     grid-template-columns: auto auto auto auto;
     padding-bottom: 20px;
   }
-    
 
 
-
-
-  
-  .thumnailContainer {
-    display: grid;
-    grid-template-columns: auto auto auto ;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 20px;
+   
+  * {
+    box-sizing: border-box;
   }
 
-  .thumnail {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
+  .PhotoGallery {
+    position: relative;
+ 
     
+  }
+
+  .mySlides {
+    display: none;
+    
+    width: 90%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  #caption {
+    font-size: 26px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .fullLandscape {
+    display: block;
+    height: auto;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+  .fullPotrait {
+    display: block;
+    height: auto;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+  
+    
+
+
+  .column {
+   float: left;
+   width:16.66%;
+   
+  }
+  .column2 {
+    float:left;
+    width: 10.33%;
+  }
+
+  .row:after {
+    content: "";
+    display:table;
+    clear: both;
+  }
+  .thumnail {
+    width: 100%
+  }
+  .potraitThumnail {
+    width: 100%
+  }
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.numberText {
+    
+    color: aliceblue;
+    font-size: 26px;
+    width: fit-content;
+    padding: 10px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+
+  }
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  width: auto;
+  border-radius: 15px;
+}
+
+.demo{
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover , .demop:hover{
+  opacity: 1;
+}
+
+  .certBadge:hover {
+    transform: rotatey(45deg);
   }
 
 
@@ -204,7 +321,7 @@ span {
     display: grid;
     gap:15px;
    
-    grid-template-columns:  auto auto auto auto auto;
+    grid-template-columns:  auto auto auto auto auto auto;
     justify-content: center;
   }
 
@@ -228,6 +345,7 @@ span {
     
   }
 
+
   #topButton {
     
     display: none; /* Hidden by default */
@@ -244,11 +362,7 @@ span {
   #topButton:hover {
   opacity: 1;
   }
-  
-button{
-  background-color: none;
-  color: none;
-}
+
   .codeGif {
     width: 90%;
     margin-left: auto;
@@ -258,22 +372,53 @@ button{
   }
   
   .certBadge {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
+
+
 
   
   
+  
  @media screen and (max-width: 1600px ) {
-    .thumnailContainer {
-        grid-template-columns: auto auto;
-        gap: 15px
-    }
+    .mySlides {
+      
+      
+        width: 90%;
+        height: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        
+      }
+    
+      .fullLandscape {
+        display: block;
+        height: auto;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      
+      }
+    
+      .fullPotrait {
+        display: block;
+        height: auto;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+ 
+   
+    
+
+  
     .codeparagraph {
         width: 80%;
     }
     .certContainer {
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns:  auto auto auto auto;
     }
     .certBadge {
         width: 180px;
@@ -303,22 +448,45 @@ button{
     .codeContainer {
         grid-template-columns: auto auto;
     }
+
+
+   
+
+    
+
 }
 
 @media screen and (max-width:830px){
     .certContainer {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto  auto auto;
         
     }
     .codeContainer {
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
     }
+
+  
+ 
+      #caption {
+        font-size: 16px;
+      }
+    
+
+   
+
 
     
 }
   
 @media screen and (max-width: 600px ) {
-    .thumnailContainer, .codeContainer {
+    q{
+        max-width: 100%;
+        font-size: 15px
+    }
+
+  
+
+   .codeContainer {
         grid-template-columns: auto;
         gap: 15px;
     }
@@ -326,22 +494,22 @@ button{
         gap: 15px;
     }
     .certContainer {
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto ;
         gap: 15px;
     }
     .certBadge {
         width: 100px;
         height: 100px;
     }
+  
+
 
   
-    p, h1, footer, q, span, #Headbar, h2, h3, .Center {
+    p, h1, footer, span, #Headbar, h2, h3, .Center {
         font-size: 16px;
     }
 
-    q {
-        width: 95%;
-    }
+   
     .codeparagraph {
         width: 90%;
     }
@@ -349,29 +517,26 @@ button{
         width: 89%;
         height: 50%;
     }
-    #topButton {
-        width: 42px;
-
+    .numberText {
+        font-size: 16px;
     }
+    
+
 
     
 
+
 }
-
-  
-  
-
-  
-  
-
-  
+@media  screen and (max-width: 320px) {
  
 
-
-  
- 
-
-  
-
-  
-
+    #navIcons {
+        width: 10%;
+        height: 10%;
+        gap: 5px
+    
+    }
+    .numberText {
+        font-size: 5px;
+    }
+}
