@@ -7,8 +7,8 @@ let mybutton = document.getElementById("topButton");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 && screen.width > 800 ) {
-    mybutton.style.display = "relative";
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 && width > 700) {
+    mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
   }

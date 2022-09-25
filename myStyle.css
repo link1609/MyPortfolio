@@ -169,7 +169,7 @@ span {
   #navIcons {
     display: grid;
     width: 60%;
-    gap: 80px;
+    gap: 10%;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
