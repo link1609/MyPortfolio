@@ -168,7 +168,7 @@ span {
 
   #navIcons {
     display: grid;
-    width: 50%;
+    width: 60%;
     gap: 80px;
     margin-left: auto;
     margin-right: auto;
@@ -243,9 +243,7 @@ span {
   .thumnail {
     width: 100%
   }
-  .potraitThumnail {
-    width: 100%
-  }
+
 
 
 .prev,
@@ -291,6 +289,11 @@ span {
     
 
   }
+  .navCon {
+
+    width: 80%;
+
+  }
 
 /* Container for image text */
 .caption-container {
@@ -318,8 +321,10 @@ span {
   .certContainer {
     padding-top: 25px;
     display: grid;
-    gap:15px;
-   
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  
     grid-template-columns:  auto auto auto auto auto auto;
     justify-content: center;
   }
@@ -371,8 +376,7 @@ span {
   }
   
   .certBadge {
-    width: 150px;
-    height: 150px;
+    width: 60%;
   }
 
 
@@ -408,21 +412,13 @@ span {
         margin-right: auto;
       }
 
- 
-   
-    
-
-  
     .codeparagraph {
         width: 80%;
     }
     .certContainer {
         grid-template-columns:  auto auto auto auto;
     }
-    .certBadge {
-        width: 180px;
-        height: 180px;
-    }
+    
     .codeGif {
         height: auto;
 
@@ -436,10 +432,7 @@ span {
     .certContainer {
         grid-template-columns: auto auto auto;
     } 
-    .certBadge {
-        width: 160px;
-        height: 160px;   
-    }
+   
     .codeGif {
         height: auto;
         width: 90%;
@@ -494,12 +487,8 @@ span {
     }
     .certContainer {
         grid-template-columns: auto auto auto ;
-        gap: 15px;
     }
-    .certBadge {
-        width: 100px;
-        height: 100px;
-    }
+  
   
 
 
