@@ -3,20 +3,29 @@ let height = screen.height;
 // Get the button:
 let mybutton = document.getElementById("topButton");
 
-// When the user scrolls down 20px from the top of the document, show the button
+window.addEventListener("resize", function() {
+  if (window.matchMedia("(min-width: 800px)").matches) {
+    // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 && width > 700) {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
   }
 }
+  } else {
+    mybutton.style.display = "none";
 
-function numberTextPosistion(){
 
-}
+  
+  }
+})
+
+
+
+
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
