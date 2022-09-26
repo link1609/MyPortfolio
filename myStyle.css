@@ -15,7 +15,7 @@ body {
 }
 
 p, h1, footer, q, span, #Headbar, h2, h3, .Center, .backGroundColour, 
-.mySlides,  .fullLandscape, .fullPotrait, .numberText, .certBadge, .codeGif, .numberText  {
+.mySlides,  .fullLandscape, .fullPotrait, .numberText, .certBadge, .codeGif, #caption  {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -40,7 +40,6 @@ p, h1, footer, q, span, #Headbar, h2, h3, .Center, .caption-container{
 }
 
 p {
-
     min-height: auto;
     width: 90%;
     padding: 5px;
@@ -107,15 +106,11 @@ br {
 
 a:link, a:visited {
     text-decoration: none;
+    color: #f0f8ff;
 }
 
 a:hover,  a:hover:visited {
     color: turquoise;
-}
-
-a:visited {
-    color: #f0f8ff;
-
 }
 
 nav {
@@ -123,10 +118,8 @@ nav {
 }
 
 .navCon {
-
     width: 80%;
-
-  }
+}
 
 span {
     padding-bottom: 10px;
@@ -138,11 +131,11 @@ span {
     justify-content: center;
     grid-template-columns: auto auto auto auto;
     padding-bottom: 20px;
-  }
+}
 
 * {
     box-sizing: border-box;
-  }
+}
 
 /* grids set up */
 
@@ -185,18 +178,18 @@ span {
     border-radius: 15px;
   }
   
-  .code {
+.code {
     display: block;
     width: 95%;
     height: fit-content;
     padding: 10px;
-  }
+}
 
-  .codelink {
+.codelink {
     max-width: 20%;
 }
 
-  .codeparagraph {
+.codeparagraph {
     width: 100%;
 }
 
@@ -204,7 +197,7 @@ span {
 
 .PhotoGallery {
     position: relative; 
-  }
+}
 
 .mySlides {
     display: none;
@@ -222,8 +215,8 @@ span {
 }
 
 .fullLandscape {
-height: auto;
-width: 70%;
+    height: auto;
+    width: 70%;
 }
 
 .fullPotrait {
@@ -232,14 +225,11 @@ width: 70%;
 }
 
 .numberText {
-    
-    color: aliceblue;
     font-size: 26px;
     width: fit-content;
     padding: 10px;
     text-align: center;
 }
-
 
   /*thumnail containers */
 
@@ -291,6 +281,7 @@ width: 70%;
 }
 
 /* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -338,17 +329,15 @@ width: 70%;
       width: 80%;
     }
 
-  .mySlides {
-    width: 85%;
-    height: 40%;
+    .mySlides {
+        width: 85%;
+        height: 40%;
   }
 
   .fullLandscape {
     display: block;
     height: auto;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .fullPotrait {
@@ -370,7 +359,7 @@ width: 70%;
     }
 }
 
-@media screen and (max-width:830px){
+@media screen and (max-width:830px) {
     .certContainer {
         grid-template-columns: auto  auto auto auto;
         
@@ -402,7 +391,6 @@ width: 70%;
     .certContainer {
         grid-template-columns: auto auto auto auto;
     }
-  
   
     p, h1, footer, span, #Headbar, h2, h3, .Center, .numberText {
         font-size: 16px;
