@@ -177,8 +177,6 @@ span {
     padding-bottom: 20px;
   }
 
-
-   
   * {
     box-sizing: border-box;
   }
@@ -222,9 +220,6 @@ span {
    
   }
   
-    
-
-
   .column {
    float: left;
    width:16.66%;
@@ -243,8 +238,6 @@ span {
   .thumnail {
     width: 100%
   }
-
-
 
 .prev,
 .next {
@@ -274,8 +267,6 @@ span {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-
 .numberText {
     
     color: aliceblue;
@@ -286,9 +277,8 @@ span {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    
-
   }
+
   .navCon {
 
     width: 80%;
@@ -316,7 +306,6 @@ span {
   .certBadge:hover {
     transform: rotatey(45deg);
   }
-
 
   .certContainer {
     padding-top: 25px;
@@ -357,7 +346,7 @@ span {
     bottom: 100px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     opacity: .2;
-    width:64px;
+    width:50px;
     cursor: pointer; /* Add a mouse pointer on hover */
     background-color: none;
 
@@ -379,10 +368,6 @@ span {
     width: 60%;
   }
 
-
-
-  
-  
   
  @media screen and (max-width: 1600px ) {
     .mySlides {
@@ -415,6 +400,7 @@ span {
     .codeparagraph {
         width: 80%;
     }
+
     .certContainer {
         grid-template-columns:  auto auto auto auto;
     }
@@ -423,12 +409,14 @@ span {
         height: auto;
 
     }
+
     .codeContainer {
         grid-template-columns: auto auto;
     }
 }
 
 @media screen and (max-width: 1000px) {
+
     .certContainer {
         grid-template-columns: auto auto auto;
     } 
@@ -437,15 +425,10 @@ span {
         height: auto;
         width: 90%;
     }
+
     .codeContainer {
         grid-template-columns: auto auto;
     }
-
-
-   
-
-    
-
 }
 
 @media screen and (max-width:830px){
@@ -456,18 +439,13 @@ span {
     .codeContainer {
         grid-template-columns: auto auto;
     }
-
   
- 
       #caption {
         font-size: 16px;
       }
-    
-
-   
-
-
-    
+      #topButton {
+        width: 0px
+      }
 }
   
 @media screen and (max-width: 600px ) {
@@ -476,55 +454,32 @@ span {
         font-size: 15px
     }
 
-  
-
    .codeContainer {
         grid-template-columns: auto;
         gap: 15px;
     }
-    #navIcons {
-        gap: 15px;
-    }
+    
     .certContainer {
         grid-template-columns: auto auto auto ;
     }
   
   
-
-
-  
     p, h1, footer, span, #Headbar, h2, h3, .Center {
         font-size: 16px;
     }
 
-   
     .codeparagraph {
         width: 90%;
     }
+
     .codeGif {
         width: 89%;
         height: 50%;
     }
+
     .numberText {
         font-size: 16px;
     }
     
-
-
-    
-
-
 }
-@media  screen and (max-width: 320px) {
- 
 
-    #navIcons {
-        width: 10%;
-        height: 10%;
-        gap: 5px
-    
-    }
-    .numberText {
-        font-size: 5px;
-    }
-}

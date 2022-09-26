@@ -17,23 +17,15 @@ function scrollFunction() {
 }
   } else {
     mybutton.style.display = "none";
-
-
-  
   }
 })
-
-
-
-
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-
+//Slideshow Functions
 let plusSlideIndex = 1;
 showPhotoSlides(plusSlideIndex);
 
@@ -46,7 +38,6 @@ function plusSlides(n) {
 function currentPhotoSlide(n) {
     showPhotoSlides(plusSlideIndex = n);
 }
-
 
 function showPhotoSlides(n) {
   let i;
