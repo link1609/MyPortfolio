@@ -189,11 +189,11 @@ span {
 
   .mySlides {
     display: none;
-    
     width: 90%;
-    height: 50%;
+    height: 40%;
     margin-left: auto;
     margin-right: auto;
+    
     
   }
   #caption {
@@ -208,7 +208,6 @@ span {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-  
   }
 
   .fullPotrait {
