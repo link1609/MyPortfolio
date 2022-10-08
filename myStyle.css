@@ -177,27 +177,31 @@ span {
 }
 
 .codeGif {
-    width: 90%;
-    height: auto;  
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+   
 }
 
 .codeItem {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    height: auto;
 }
+
 .codeItem  a {
     background-color: aliceblue;
     padding: 20px;
     border-radius: 15px;
-    width: 70%;
+    width: 40%;
     text-align: center;
     color: black;
-    margin-top: 10px;
 }
 .codeGifLong {
-    height: auto;
-    width: 70%
+    width: 40%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
   /* Photography page */
@@ -324,8 +328,6 @@ width: 70%;
         grid-template-columns:  auto auto auto auto;
     }
     
-  
-
   .mySlides {
     width: 85%;
     height: 40%;
@@ -347,21 +349,20 @@ width: 70%;
 }
 
 @media screen and (max-width: 1000px) {
+    .codeItem a {
+        font-size: 14px;
+        width: 50%;
+        padding: 10px;
+        
+    }
+    .codeGif {
+        width: 70%;
+    }
+    .codeGifLong {
+        width: 50%;
+    }
 
 
-    .codeContainer {
-        display: block;
-        width:80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .codeItem {
-        display: block;
-        margin-bottom: 15px;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
    
    
 
@@ -378,8 +379,16 @@ width: 70%;
         width: 0px
     }
     .codeItem a {
-        font-size: 15px;
+        font-size: 14px;
+        width: 60%;
+        padding: 10px;
         
+    }
+    .codeGif {
+        width: 90%;
+    }
+    .codeGifLong {
+        width: 60%;
     }
 
     
