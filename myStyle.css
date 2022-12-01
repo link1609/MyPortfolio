@@ -151,15 +151,15 @@ span {
 /* Home Page */
 
 .certBadge {
-    width: 60%;
+    width: 50%;
 }
 
 .certContainer {
     padding-top: 4%;
-    width: 100%;
+    width: 90%;
     grid-template-columns:  auto auto auto auto auto auto;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 }
   
 .certBadge:hover {
@@ -172,12 +172,13 @@ span {
     margin-top: 10px;
     display: grid;
     width: 90%;
-    grid-template-columns: auto auto;
-    row-gap: 20px; 
+    grid-template-columns: auto auto auto auto;
+    gap: 15px; 
 }
 
+
 .codeGif {
-    width: 50%;
+    width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
    
@@ -190,19 +191,8 @@ span {
     height: auto;
 }
 
-.codeItem  a {
-    background-color: aliceblue;
-    padding: 20px;
-    border-radius: 15px;
-    width: 40%;
-    text-align: center;
-    color: black;
-}
-.codeGifLong {
-    width: 40%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
+
+
 
   /* Photography page */
 
@@ -324,9 +314,7 @@ width: 70%;
 
 @media screen and (max-width: 1600px ) {
 
-    .certContainer {
-        grid-template-columns:  auto auto auto auto;
-    }
+
     
   .mySlides {
     width: 85%;
@@ -349,12 +337,7 @@ width: 70%;
 }
 
 @media screen and (max-width: 1000px) {
-    .codeItem a {
-        font-size: 14px;
-        width: 50%;
-        padding: 10px;
-        
-    }
+   
     .codeGif {
         width: 70%;
     }
@@ -371,19 +354,14 @@ width: 70%;
         grid-template-columns: auto  auto auto auto;  
     }
    
-    #caption, .codeItem a {
+    #caption {
         font-size: 16px;
     }
 
     #topButton {
         width: 0px
     }
-    .codeItem a {
-        font-size: 14px;
-        width: 60%;
-        padding: 10px;
-        
-    }
+   
     .codeGif {
         width: 90%;
     }
