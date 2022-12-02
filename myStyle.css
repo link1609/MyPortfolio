@@ -130,7 +130,7 @@ span {
 }
 
 #navIcons {
-    width: 60%;
+    width: 80%;
     gap: 10%;
     justify-content: center;
     grid-template-columns: auto auto auto auto;
@@ -155,6 +155,7 @@ span {
 }
 
 .certContainer {
+    padding-bottom: 4%;
     padding-top: 4%;
     width: 90%;
     grid-template-columns:  auto auto auto auto auto auto;
