@@ -173,7 +173,7 @@ span {
     margin-top: 10px;
     display: grid;
     width: 90%;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     gap: 15px; 
 }
 
